@@ -1,0 +1,339 @@
+:root{
+    --yellow:#f2e713;
+    --grey:rgb(43, 42, 42);
+}
+
+.main{
+    width: 80vw;
+    height: 80vh;
+    border: 0px solid white;
+    transform: translateY(5vh)translateX(20vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillcon{
+    border: 0px solid white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    transform: translateY(-3vh);
+}
+
+.skill{
+    width: 220px;
+    height: 220px;
+    background-color: var(--grey);
+    border: 0px solid white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+.skill svg{
+    width: 50px;
+}
+
+.skill button{
+    padding: 15px;
+    background-color: var(--yellow);
+    color: var(--grey);
+    border-width: 0px;
+    margin-top: 3vh;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.skill button:hover{
+    transform: translateY(-1vh);
+    background-color: black;
+    color: white;
+}
+
+.skill_info_div_open{
+    width: 50%;
+    height: 100%;
+    background-color: var(--grey);
+    position: absolute;
+    z-index: 3;
+    box-shadow: 2px 2px 30px black;
+    transition: .3s;
+    border-radius: 8px;
+    transform: translateX(-0vw)translateY(3vh);
+    transition: .5s
+}
+
+.skill_info_div_close{
+    width: 50%;
+    height: 100%;
+    background-color: var(--grey);
+    position: absolute;
+    box-shadow: 2px 2px 30px black;
+    transition: .3s;
+    border-radius: 8px;
+    transform: translateY(10vw);
+    transition: .5s;
+    opacity: 0;
+    z-index: 0;
+}
+
+.exitbutton{
+    padding: 13px;
+    border-width: 0px;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: var(--yellow);
+    transition: .2s;
+    border-radius: 5px;
+    margin: 15px;
+}
+.exitbutton:hover{
+    background-color: black;
+    color: white;
+}
+
+.divider{
+    height: 100px;
+}
+
+.skillandicon{
+    border: 0px solid white;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.skillandicon svg{
+    margin-left: 4vw;
+    width: 50%;
+}
+
+
+
+.skillheader{
+    border: 0px solid white;
+    font-weight: 500;
+}
+
+.skilllistdiv{
+    width: 80%;
+    height: 55%;
+    border: 0px solid white;
+    transform: translateX(10%);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 20px;
+    background-color: rgb(245, 245, 162);
+    background-color: var(--grey);
+}
+
+.techdiv{
+    height: 50px;
+    width: fit-content;
+    min-width: 100px;
+    background-color: var(--yellow);
+    color: black;
+    margin: 20px;
+    font-weight: 400;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: .3s;
+}
+
+.techdiv:hover{
+    transform: translateY(-1vh);
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 5px rgb(24, 24, 24);
+}
+
+
+
+@media ((max-width:400px) and (min-width:350px)) {
+
+    .main{
+        width: 80vw;
+        height: 80vh;
+        border: 0px solid white;
+        transform: translateY(-45vh)translateX(5vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skillcon{
+        border: 0px solid white;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        transform: translateY(-3vh);
+    }
+    
+    .skill{
+        width: 220px;
+        height: 220px;
+        background-color: var(--grey);
+        border: 0px solid white;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    .skillp{
+        transform: translateY(2vh);
+        text-align: center;
+    }
+    
+    .skill svg{
+        width: 50px;
+    }
+    
+    .skill button{
+        padding: 15px;
+        background-color: var(--yellow);
+        color: var(--grey);
+        border-width: 0px;
+        margin-top: 3vh;
+        border-radius: 5px;
+        transition: .3s;
+    }
+    
+    .skill button:hover{
+        transform: translateY(-1vh);
+        background-color: black;
+        color: white;
+    }
+    
+    .skill_info_div_open {
+        width: 90%;
+        height: 100%;
+        background-color: var(--grey);
+        z-index: 3;
+        box-shadow: 2px 2px 30px black;
+        border-radius: 8px;
+        position: fixed;  /* Fix the position relative to the viewport */
+        top: 50%;         /* Position 50% from the top of the viewport */
+        left: 50%;        /* Position 50% from the left of the viewport */
+        transform: translate(-50%, -50%);  /* Adjust the div's position to perfectly center it */
+        transition: 0.5s;  /* Combine transition properties */
+    }
+    
+    .skill_info_div_close{
+        width: 50%;
+        height: 100%;
+        background-color: var(--grey);
+        position: fixed;
+        display: none;
+        box-shadow: 2px 2px 30px black;
+        transition: .3s;
+        border-radius: 8px;
+        transform: translateY(5vw);
+        transition: .5s;
+        opacity: 0;
+        z-index: 0;
+    }
+    
+    .exitbutton{
+        padding: 5px;
+        border-width: 0px;
+        position: absolute;
+        right: 0;
+        font-size: 20px;
+        color: var(--yellow);
+        transition: .2s;
+        border-radius: 5px;
+        margin: 15px;
+    }
+    .exitbutton:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .divider{
+        height: 100px;
+    }
+    
+    .skillandicon{
+        border: 0px solid white;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 30px;
+        margin-top: 5vh;
+    }
+    
+    .skillandicon svg{
+        margin-left: 4vw;
+        width: 30%;
+    }
+    
+    
+    
+    .skillheader{
+        border: 0px solid white;
+        font-weight: 500;
+        font-size: 20px
+    }
+
+    ::-webkit-scrollbar{
+        width: 15px;
+    }
+    
+    .skilllistdiv{
+        width: 80%;
+        height: 75%;
+        overflow-y: scroll;
+        border: 0px solid white;
+        transform: translateX(10%)translateY(1vh);
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0;
+        background-color: rgb(245, 245, 162);
+        background-color: var(--grey);
+    }
+    
+    .techdiv{
+        height: 50px;
+        width: fit-content;
+        min-width: 100px;
+        background-color: var(--yellow);
+        color: black;
+        margin: 20px;
+        font-weight: 400;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        transition: .3s;
+    }
+    
+    .techdiv:hover{
+        transform: translateY(-1vh);
+        background-color: black;
+        color: white;
+        box-shadow: 1px 1px 5px rgb(24, 24, 24);
+    }
+}
