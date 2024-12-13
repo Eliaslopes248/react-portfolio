@@ -77,7 +77,7 @@
 
 
 
-@media ((max-width:400px) and (min-width: 350px)) {
+@media ((max-width:490px) and (min-width: 350px)) {
     :root{
     --yellow:#f2e713;
 }
@@ -96,6 +96,7 @@
 
 .main h1{
     transform: translateY(2vh);
+    
 }
 
 .infocon{
@@ -132,12 +133,12 @@
     width: 150px;
     text-align: left;
     border: 0px solid;
-    transform: translateX(0vw);
+    transform: translateX(0vw)translateX(2vw);
 }
 .subhead{
     font-size: 17px;
     color: var(--yellow);
-    transform: translateY(-4vh);
+    transform: translateY(-4vh)translateX(2vw);
 }
 
 .info h3{
@@ -155,15 +156,16 @@
     border-radius: 5px;
     padding: 15px;
     font-weight: bold;
-    transform: translateX(3vh)translateY(-2vh);
+    transform: translateX(5vh)translateY(-3vh);
     transition: .3s;
 }
 
 p{
-    width: 250px;
+    width: 70vw;
     font-size: 12px;
     border: 0px solid;
-    transform: translateX(-11vw)translateY(-4vh);
+    transform: translateX(-15vw)translateY(-4vh);
+    text-align: left;
 }
 
 .learnmore:hover{

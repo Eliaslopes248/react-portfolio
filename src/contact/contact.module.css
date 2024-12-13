@@ -132,7 +132,7 @@
     color: white;
 }
 
-@media ((max-width:400px) and (min-width:350px)) {
+@media ((max-width:490px) and (min-width:350px)) {
     :root{
         --yellow:#f2e713;
         --grey:rgb(43, 42, 42);
@@ -167,7 +167,7 @@
     .card:nth-child(1){
         border-left: 8px solid var(--yellow);
         overflow-x: hidden;
-        gap: 0px;
+        gap: 20px;
         display: flex;
         flex-direction: column;
         padding-right: 20px;
@@ -184,6 +184,12 @@
         transform: translateX(0vw);
         transition: .3s;
         opacity: 1;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border: 0px solid;
+        justify-content: left;
         
     }
     
@@ -193,9 +199,10 @@
     }
     
     .info_open p{
-        margin: 40px;
         color: var(--yellow);
         font-size: 15px;
+        text-align: left;
+        transform: translateX(0vw);
     }
     
     .info_open svg{
